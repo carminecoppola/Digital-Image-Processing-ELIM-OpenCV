@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/carmine/Documents/Documenti/01. Parthenope/05.ELIM/Esercizi/Esercizi-ELIM",
+      "program": "/Users/carmine/Documents/Documenti/01. Parthenope/05.ELIM/Esercizi/Esercizi-ELIM/build/Debug/outDebug"
+    }
+  ]
+}
