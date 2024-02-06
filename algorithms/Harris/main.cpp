@@ -5,7 +5,7 @@ using namespace cv;
 using namespace std;
 
 Mat src, dst;
-int ht = 68;
+int ht = 150;
 
 void harris(const Mat& src, Mat& dst){
 
@@ -50,7 +50,7 @@ void harris(const Mat& src, Mat& dst){
 }
 
 
-void HarrisThreshold(int, void* ){
+void HarrisThreshold(){
     harris(src, dst);
 
     Mat dst_scale;
@@ -81,9 +81,12 @@ int main(int argc, char** argv){
 
 
     namedWindow("Harris");
-    createTrackbar("Trackbar th", "Harris", &ht, 255, HarrisThreshold);
-    HarrisThreshold(0,0);
+    HarrisThreshold();
     waitKey(0);
+
+    //createTrackbar("Trackbar th", "Harris", &ht, 255, HarrisThreshold);
+    //HarrisThreshold(0,0);
+    //waitKey(0);
 
     Mat Harris;
     cornerHarris( src, Harris, 2, 3, 0.05);
