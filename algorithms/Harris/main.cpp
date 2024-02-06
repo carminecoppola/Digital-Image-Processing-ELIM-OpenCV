@@ -12,8 +12,8 @@ void harris(const Mat& src, Mat& dst){
     //1) Calcolare le derivate rispetto ad x e y
 
     Mat dX, dY;
-    Sobel(src, dX, CV_32FC1, 1, 0);
-    Sobel(src, dY, CV_32FC1, 1, 0);
+    Sobel(src, dX, CV_32FC1, 1, 0); //Calcola la derivata di X (1, 0)
+    Sobel(src, dY, CV_32FC1, 0, 1); //Calcola la derivata di Y (0, 1)
 
     //2) Calcolare le due derivate al quadrato (dX^2 , dY^2) e dX*dY
     Mat dX2, dY2, dXY;
