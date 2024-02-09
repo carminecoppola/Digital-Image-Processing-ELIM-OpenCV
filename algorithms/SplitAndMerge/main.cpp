@@ -10,9 +10,8 @@
  * il predicato è vero per le singole regioni adiacenti (non si effettua l’unione).
 */
 
-
-#include <iostream>
 #include <opencv4/opencv2/opencv.hpp>
+#include <iostream>
 #include <vector>
 
 using namespace std;
