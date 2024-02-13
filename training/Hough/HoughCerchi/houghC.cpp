@@ -4,17 +4,17 @@
 using namespace std;
 using namespace cv;
 
-const int Rmin = 50;
-const int Rmax = 150;
+const int Rmin = 60;
+const int Rmax = 79;
 const int ht = 170;
 
 void houghCircle(const Mat& src, Mat& dst){
 
     Mat blur;
-    GaussianBlur(src, blur, Size(3,3), 0, 0);
+    GaussianBlur(src, blur, Size(5,5), 0, 0); // cambiata anche la dimensione del size
 
     Mat imgCanny;
-    Canny(blur, imgCanny, 100,200);
+    Canny(blur, imgCanny, 240,250); // Cambiate le soglie per canny
     imshow("Canny",imgCanny);
 
     //Dimensione matrice dei voti
@@ -58,7 +58,7 @@ void houghCircle(const Mat& src, Mat& dst){
             for (int j = 0; j < imgCanny.cols; j++)
             {
                 if(votes.at<uchar>(i, j, r - Rmin) > ht){
-                    circle(dst, Point(j,i), 3, Scalar(127,127,0), 2, 8, 0);
+                    circle(dst, Point(j,i), 2, Scalar(127,127,0), 2, 8, 0); //Circonferenza del raggio ridotta
                     circle(dst, Point(j,i), r, Scalar(127,127,0), 2, 8, 0);
 
                 }
