@@ -6,6 +6,20 @@ This repository contains implementations of various image processing algorithms 
   <img src="https://github.com/carminecoppola/Digital-Image-Processing-ELIM-OpenCV/assets/74236426/452ec25b-47db-4c30-b040-5de4ae276671" alt="lena" width="200">
 </p>
 
+## Course Description
+The Image Processing course focuses on the application of techniques and algorithms for manipulation, analysis, and processing of digital images. Throughout the course, topics covered include:
+
+Fundamentals of digital images
+- Spatial and frequency domain filters
+- Fourier transforms
+- Segmentation and shape recognition
+- Feature extraction
+- Image compression
+- Color image processing
+- Specific applications such as computer vision, video processing, etc.
+- Repository Structure
+- The repository is organized as follows:
+
 ## Implemented Algorithms
 1. **Canny**: Edge detection using the Canny algorithm.
 2. **Harris**: Corner detection using the Harris detector.
@@ -22,8 +36,11 @@ You need to install OpenCV to run the exercises in this repository. You can foll
 ## Usage
 To run the exercises in the repository, execute the `compile.zsh` script. Make sure you have OpenCV correctly installed on your system before running the exercises.
 
-## Training Section
-There is a section within the repository dedicated to exercises for the written assignment of the Image Processing course at Parthenope University. This section provides study materials and exercises for your learning.
+## Structure
+- `/algorithms`: Includes implementations of discussed algorithms during lectures. This section is divided into subfolders corresponding to the covered topics. Each implementation is accompanied by well-commented source code and an explanation of the key algorithm steps.
+- `/img`: Contains the images for testing.
+- `/exercises`: Contains exercises assigned during the course, categorized by topic. Each exercise is accompanied by a description and, if applicable, a set of sample data.
+- `/training`: There is a section within the repository dedicated to exercises for the written assignment of the Image Processing course at Parthenope University. This section provides study materials and exercises for your learning.
 
 ## Collaboration
 Contributions and improvements from students and professionals interested in image processing are welcome. Feel free to submit pull requests with enhancements, bug fixes, or new features.
