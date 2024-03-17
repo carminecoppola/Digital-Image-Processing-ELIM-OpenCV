@@ -50,7 +50,7 @@ void harris(const Mat& src, Mat& dst){
         {
             if (dst.at<float>(i,j) > ht)
             {
-                circle(dst_scale, Point(i,j), 5, Scalar(0, 0, 255), 2, 8, 0);
+                circle(dst_scale, Point(j,i), 5, Scalar(0, 0, 255), 2, 8, 0);
             }
             
         }

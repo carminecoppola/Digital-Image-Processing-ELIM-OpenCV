@@ -85,7 +85,6 @@ void myRg(const Mat& src, Mat& dst){
 
                     dst = dst + mask * 255;
                 }
-
             }
             mask -= mask;
         }
